@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E9FBAD0-DE48-4089-A836-0A29676A9929}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COM3D2.PartsEdit.Plugin</RootNamespace>
+    <AssemblyName>COM3D2.PartsEdit.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoneDropDownSelect.cs" />
+    <Compile Include="BoneEdit.cs" />
+    <Compile Include="BoneGizmoRenderer.cs" />
+    <Compile Include="Common\UI\GearWindowSystem.cs" />
+    <Compile Include="Common\UI\IUIDrawer.cs" />
+    <Compile Include="Common\UI\Parts\ComboBox.cs" />
+    <Compile Include="Common\UI\Parts\RadioButton.cs" />
+    <Compile Include="Common\UI\ScaleButton.cs" />
+    <Compile Include="Common\UI\UIParams.cs" />
+    <Compile Include="Common\UI\UIRadioButton.cs" />
+    <Compile Include="Common\UI\UIUtil.cs" />
+    <Compile Include="Common\UI\UIWindow.cs" />
+    <Compile Include="Common\Util\BoneRenderer\BoneRendererAssist.cs" />
+    <Compile Include="Common\Util\BoneRenderer\BoneRendererManager.cs" />
+    <Compile Include="Common\Util\CopyTransform.cs" />
+    <Compile Include="Common\Util\ExGizmoRenderer.cs" />
+    <Compile Include="Common\Util\MaidObserver.cs" />
+    <Compile Include="Common\Util\MaidUtil.cs" />
+    <Compile Include="Common\Util\PluginInfo.cs" />
+    <Compile Include="Common\Util\PngData.cs" />
+    <Compile Include="Data\BackUpData\BackUpBoneData.cs" />
+    <Compile Include="Data\BackUpData\BackUpData.cs" />
+    <Compile Include="Data\BackUpData\BackUpMaidData.cs" />
+    <Compile Include="Data\BackUpData\BackUpObjectData.cs" />
+    <Compile Include="Data\BackUpData\BackUpSlotData.cs" />
+    <Compile Include="Data\CommonUIData.cs" />
+    <Compile Include="Data\ObjectData.cs" />
+    <Compile Include="Data\PresetFileData.cs" />
+    <Compile Include="Data\Setting.cs" />
+    <Compile Include="MaidObserver.cs" />
+    <Compile Include="PartsEdit.cs" />
+    <Compile Include="PartsEditPlugin.cs" />
+    <Compile Include="PresetManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneDataManager.cs" />
+    <Compile Include="UI\BoneDisplaySettingUI.cs" />
+    <Compile Include="UI\BoneEditUI.cs" />
+    <Compile Include="UI\ExportUI.cs" />
+    <Compile Include="UI\FinishUI.cs" />
+    <Compile Include="UI\GizmoSettingUI.cs" />
+    <Compile Include="UI\ImportUI.cs" />
+    <Compile Include="UI\MaidObjectUI.cs" />
+    <Compile Include="UI\MaidSelectUI.cs" />
+    <Compile Include="UI\MaidSlotSelectUI.cs" />
+    <Compile Include="UI\MultipleMaidObjectSelectUI.cs" />
+    <Compile Include="UI\ObjectDataUI.cs" />
+    <Compile Include="UI\ObjectEditUI.cs" />
+    <Compile Include="UI\SettingUI.cs" />
+    <Compile Include="UI\SkinnedMeshObjectEditUI.cs" />
+    <Compile Include="UI\SkinnedMeshObjectSelectUI.cs" />
+    <Compile Include="UI\TargetSelectModeUI.cs" />
+    <Compile Include="Util\BoneUtil.cs" />
+    <Compile Include="Util\ColorUtil.cs" />
+    <Compile Include="Util\IniUtil.cs" />
+    <Compile Include="Util\SlotUtil.cs" />
+    <Compile Include="Util\TransformUtil.cs" />
+    <Compile Include="Util\YureUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PngResource\GearIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Library\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

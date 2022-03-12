@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM3D2.PartsEdit.Plugin", "COM3D2.PartsEdit.Plugin\COM3D2.PartsEdit.Plugin.csproj", "{0E9FBAD0-DE48-4089-A836-0A29676A9929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM3D2.PartsEdit.Plugin", "CM3D2.PartsEdit.Plugin\CM3D2.PartsEdit.Plugin.csproj", "{329D69EA-59B5-4305-85D9-26558F090FDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6870E2D-1669-4E4D-9D61-56AD30B2239A}"
+	ProjectSection(SolutionItems) = preProject
+		README.MD = README.MD
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E9FBAD0-DE48-4089-A836-0A29676A9929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9FBAD0-DE48-4089-A836-0A29676A9929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9FBAD0-DE48-4089-A836-0A29676A9929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9FBAD0-DE48-4089-A836-0A29676A9929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329D69EA-59B5-4305-85D9-26558F090FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329D69EA-59B5-4305-85D9-26558F090FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329D69EA-59B5-4305-85D9-26558F090FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329D69EA-59B5-4305-85D9-26558F090FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {882F8722-9008-4405-9E23-4B091FD8BCEB}
+	EndGlobalSection
+EndGlobal
