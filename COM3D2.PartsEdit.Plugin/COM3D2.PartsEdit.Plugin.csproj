@@ -18,7 +18,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;COM3D2  </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -31,12 +31,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>H:\COM3D2\COM3D2x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.UnityInjectorLoader">
+      <HintPath>H:\COM3D2\BepinEx\plugins\UnityInjectorLoader\BepInEx.UnityInjectorLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExIni">
+      <HintPath>H:\COM3D2\COM3D2x64_Data\Managed\ExIni.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnityEngine.5.6.1\lib\net35\UnityEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoneDropDownSelect.cs" />
@@ -68,6 +80,8 @@
     <Compile Include="Data\ObjectData.cs" />
     <Compile Include="Data\PresetFileData.cs" />
     <Compile Include="Data\Setting.cs" />
+    <Compile Include="GearMenu\Buttons.cs" />
+    <Compile Include="GearMenu\DefaultIcon.cs" />
     <Compile Include="MaidObserver.cs" />
     <Compile Include="PartsEdit.cs" />
     <Compile Include="PartsEditPlugin.cs" />
@@ -102,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Library\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
